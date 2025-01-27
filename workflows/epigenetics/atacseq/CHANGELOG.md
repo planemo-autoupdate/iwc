@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1] 2025-01-27
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/pe_histogram/pe_histogram/1.0.1` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/pe_histogram/pe_histogram/1.0.2`
+- `toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.24.1+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.27+galaxy0`
+
 ## [1.0] 2024-11-28
 
 ### Manual update
