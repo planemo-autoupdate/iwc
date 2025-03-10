@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1] 2025-03-10
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/4.9+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.0+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.3+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_awk_tool/9.5+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/iuc/pe_histogram/pe_histogram/1.0.1` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/pe_histogram/pe_histogram/1.0.2`
+- `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/9.3+galaxy1` was updated to `toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_grep_tool/9.5+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.31.1` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/bedtools/bedtools_mergebed/2.31.1+galaxy2`
+- `toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.24.1+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.27+galaxy3`
+
 ## [1.0] - 2024-11-28
 
 ### Manual update
