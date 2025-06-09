@@ -1,6 +1,7 @@
 {
     "a_galaxy_workflow": "true",
     "annotation": "This workflow takes as input a SRA_manifest from SRA Run Selector and will generate one fastq file or fastq pair of file for each experiment (concatenated multiple runs if necessary). Output will be relabelled to match the column specified by the user.",
+    "comments": [],
     "creator": [
         {
             "class": "Person",
@@ -19,7 +20,6 @@
         }
     ],
     "format-version": "0.1",
-    "release": "0.7",
     "license": "MIT",
     "name": "sra_manifest_to_concatenated_fastqs_parallel",
     "steps": {
@@ -70,7 +70,7 @@
                 "top": 145
             },
             "tool_id": null,
-            "tool_state": "{\"parameter_type\": \"integer\", \"optional\": false}",
+            "tool_state": "{\"validators\": [], \"parameter_type\": \"integer\", \"optional\": false}",
             "tool_version": null,
             "type": "parameter_input",
             "uuid": "de844377-af66-4f4e-bc67-327e9705d5b5",
@@ -97,7 +97,7 @@
                 "top": 243
             },
             "tool_id": null,
-            "tool_state": "{\"parameter_type\": \"integer\", \"optional\": false}",
+            "tool_state": "{\"validators\": [], \"parameter_type\": \"integer\", \"optional\": false}",
             "tool_version": null,
             "type": "parameter_input",
             "uuid": "3f0fca4f-b920-4ae6-bda8-8ef61ebbf409",
@@ -242,7 +242,7 @@
         },
         "6": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.5+galaxy2",
             "errors": null,
             "id": 6,
             "input_connections": {
@@ -265,15 +265,15 @@
                 "top": 189
             },
             "post_job_actions": {},
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.3+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_find_and_replace/9.5+galaxy2",
             "tool_shed_repository": {
-                "changeset_revision": "fbf99087e067",
+                "changeset_revision": "c41d78ae5fee",
                 "name": "text_processing",
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"find_and_replace\": [{\"__index__\": 0, \"find_pattern\": \"[^\\\\w\\\\- .,\\\\t](?=[^\\\\t]+$)\", \"replace_pattern\": \"-\", \"is_regex\": true, \"global\": true, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}, {\"__index__\": 1, \"find_pattern\": \"(.+)\\\\t(.+)\", \"replace_pattern\": \"$1\\\\t$1___$2\", \"is_regex\": true, \"global\": false, \"caseinsensitive\": false, \"wholewords\": false, \"skip_first_line\": false, \"searchwhere\": {\"searchwhere_select\": \"line\", \"__current_case__\": 0}}], \"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "9.3+galaxy1",
+            "tool_version": "9.5+galaxy2",
             "type": "tool",
             "uuid": "7b4781ed-57b0-4962-a647-21e54375c195",
             "when": null,
@@ -370,7 +370,7 @@
         },
         "9": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy0",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1",
             "errors": null,
             "id": 9,
             "input_connections": {
@@ -431,15 +431,15 @@
                     "output_name": "output_collection_other"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy0",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1",
             "tool_shed_repository": {
-                "changeset_revision": "516a54ddf218",
+                "changeset_revision": "8848455c0270",
                 "name": "sra_tools",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"adv\": {\"seq_defline\": \"@$sn/$ri\", \"minlen\": null, \"split\": \"--split-3\", \"skip_technical\": true}, \"input\": {\"input_select\": \"file_list\", \"__current_case__\": 2, \"file_list\": {\"__class__\": \"ConnectedValue\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "3.1.1+galaxy0",
+            "tool_version": "3.1.1+galaxy1",
             "type": "tool",
             "uuid": "fa409017-1eea-4426-83f6-22a10b9f762c",
             "when": null,
@@ -487,7 +487,7 @@
             },
             "tool_id": "__RELABEL_FROM_FILE__",
             "tool_state": "{\"how\": {\"how_select\": \"tabular\", \"__current_case__\": 1, \"labels\": {\"__class__\": \"ConnectedValue\"}, \"strict\": false}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.0.0",
+            "tool_version": "1.1.0",
             "type": "tool",
             "uuid": "ccdc51b2-444e-4b96-90a0-c7caba6a53e8",
             "when": null,
@@ -535,7 +535,7 @@
             },
             "tool_id": "__RELABEL_FROM_FILE__",
             "tool_state": "{\"how\": {\"how_select\": \"tabular\", \"__current_case__\": 1, \"labels\": {\"__class__\": \"ConnectedValue\"}, \"strict\": false}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
-            "tool_version": "1.0.0",
+            "tool_version": "1.1.0",
             "type": "tool",
             "uuid": "4efa4ed9-6768-4b1e-82f6-055e97af2d2d",
             "when": null,
@@ -737,6 +737,7 @@
         }
     },
     "tags": [],
-    "uuid": "363898af-e598-4f0e-abd9-e6ded395ce66",
-    "version": 3
+    "uuid": "4bda3e2a-78e9-4cf7-a8af-39ac4aa16b4c",
+    "version": 1,
+    "release": "0.8"
 }
