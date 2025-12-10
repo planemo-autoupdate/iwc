@@ -181,7 +181,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/metagenomic-genes-catalogue/main",
         "iwcID": "metagenomic-genes-catalogue-main",
         "readme": "# Genes catalogue generation from metagenomic reads\n\nThis workflow generates genes catalogue from paired short reads.\n\nThe workflow supports assembly using **MEGAHIT**.\n\n## Genes catalogue Annotation and Quality Control\n\nAfter assembly, CDS are detected from resulting contigs with **Prodigal** and the potential genes are clustered with **MMseqs2linclust**\n\nThe following processing steps are then performed:\n\n- **Genes annotation** with Eggnog-mapper\n- **Taxonomic Assignment** using MMseqs2taxonomy\n- **Assembly Quality Control** via QUAST\n- **Abundance Estimation** per sample with CoverM\n- **AMR detection** with ABRicate, AMRFinderPlus and starAMR\n\n## Input Requirements\n\nInput reads must be quality-filtered, with host reads removed.\n\n- **Trimmed reads**: Quality-trimmed reads from individual samples, used solely for abundance estimation.\n",
-        "updated": "2025-10-14T00:00:00",
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": [
             "Genome Annotation",
@@ -249,7 +249,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/host-contamination-removal-short-reads/main",
         "iwcID": "host-contamination-removal-short-reads-main",
         "readme": "# Host or Contamination removal on short-reads\n\nThe extraction of microbiome DNA or RNA is usually contaminated by host and human DNA or RNA (but also other contaminant). It is an important to get rid of all host/contamination sequences and to only retain microbiome sequences, both in order to speed up further steps and to avoid host/contamination sequences compromising the analysis.\n\nThis workflow takes paired-end Illumina fastq(.gz) files and executes the following steps:\n1. Mapping of the reads against a reference genome of the host or contaminant (e.g. human) using **Bowtie 2**\n2. Aggregation of the mapping reports using **MultiQC**\n\n## Input Datasets\n\n- A list of paired datasets corresponding to paired-end reads in `fastqsanger` or `fastqsanger.gz` format.\n- Reference genome\n\n## Output Datasets\n\n- A list of paired datasets corresponding to paired-end reads without the reads mapping to the reference genomes, in `fastqsanger` or `fastqsanger.gz`.\n- List of `JSON` reports of Bowtie2 for each sample that could be used as inputs for extra MultiQC\n- MultiQC report of the mapping statistics in HTML\n\n## When to use this workflow\n\nUse this workflow for **short-read paired-end Illumina sequencing data**. For long-read data (Nanopore, PacBio), see the [Host or Contamination removal on long-reads](../host-contamination-removal-long-reads/) workflow.",
-        "updated": null,
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": []
     },
@@ -258,7 +258,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/host-contamination-removal-long-reads/main",
         "iwcID": "host-contamination-removal-long-reads-main",
         "readme": "# Host or Contamination removal on long-reads\n\nThe extraction of microbiome DNA or RNA is usually contaminated by host and human DNA or RNA (but also other contaminant). It is an important to get rid of all host/contamination sequences and to only retain microbiome sequences, both in order to speed up further steps and to avoid host/contamination sequences compromising the analysis.\n\nThis workflow takes Nanopore fastq(.gz) files and executes the following steps:\n1. Mapping of the reads against a reference genome of the host or contaminant (e.g. human) using **Minimap 2**\n2. Filtering of the generated BAM using **BAMtools** and **Samtools** to keep only the reads that do not align\n3. Generation of mapping statistics using **QualiMap**\n4. Aggregation of the mapping statistics using **MultiQC**\n\n## Input Datasets\n\n- A list of datasets corresponding to reads in `fastqsanger` or `fastqsanger.gz` format.\n- Reference genome\n- Profile for mapping\n\n## Output Datasets\n\n- A list of datasets corresponding to unmapped reads in `fastqsanger` or `fastqsanger.gz`.\n- A list of reports of QualiMap for each sample that could be used as inputs for extra MultiQC\n- MultiQC report of the mapping statistics in HTML\n\n## When to use this workflow\n\nUse this workflow for **long-read sequencing data** (e.g., Nanopore, PacBio). For short-read Illumina data, see the [Host or Contamination removal on short-reads](../host-contamination-removal-short-reads/) workflow.",
-        "updated": null,
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": []
     },
@@ -386,7 +386,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/rnaseq-de/main",
         "iwcID": "rnaseq-de-main",
         "readme": "# RNA-Seq Differential Expression Analysis with Visualization\n\nThis workflow works only with an experimental setup containing exactly 2 conditions with at least 2 replicates per condition.\n\n## Inputs dataset\n\n- Counts from changed condition: Counts from experimental condition or changed condition. For eg. counts from treatment or knockdown samples.\n- Counts from reference condition: Counts from reference condition or base condition. For eg. counts from untreated or wildtype samples.\n- Gene Annotaton: The same GTF file used for mapping and quantification. It is used to annotate the DESeq2 results table. Ideally, the GTF file should contain `gene_id`, `gene_biotype` and `gene_name` attributes.\n\n## Inputs values\n\n- Count files have header: Indicate whether your input count files have a header line. Usually, count files generated from featureCounts tool have a header line whereas count files from RNA-STAR do not have.\n- Adjusted p-value threshold: All the genes with an adjusted p-value less than this value are considered as differentially expressed. With a value of 0.05, expect 5% of false positives in the differentially expressed genes list. If empty, a default value of 0.05 is used.\n- log2 fold change threshold: All the genes with an absolute fold change (regarless of up or down regulation) more than this value are selected. A log2 FC of 3 equals to an absolute fold change of 8 (2\u00b3). If empty, a default value of 1.0 is used.\n\n## Processing\n\n- The workflow uses DESeq2 for performing differential expression analysis. In addition to the results table, it also produces normalized counts table.\n- The results table is annotated with gene positions, biotypes, gene symbols.\n- The annotated results table is further filtered with the input adjusted p-value and log2 fold change thresholds.\n- A valcano plot is generated with top 10 significantly differentially expressed genes.\n- A heatmap of log trasformed normalized counts and another heatmap of Z-scores is generated.\n",
-        "updated": "2025-03-24T00:00:00",
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": [
             "Transcriptomics"
@@ -1000,7 +1000,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/kmer-profiling-hifi-VGP1/main",
         "iwcID": "kmer-profiling-hifi-vgp1-main",
         "readme": "# VGP Workflow #1\n\nThis workflow produces a Meryl database and Genomescope outputs that will be used to determine parameters for following workflows, and assess the quality of genome assemblies. Specifically, it provides information about the genomic complexity, such as the genome size and levels of heterozygosity and repeat content, as well about the data quality. It also provides statistics on the PacBio Hifi reads. \n\n## Inputs\n\n1. The name of the species being assembled\n2. The Name of the assembly\n3. A collection of Hifi long reads in FASTQ format\n4. *k*-mer length\n5. Ploidy\n\n## Outputs\n\n- Meryl Database of *k*-mer counts\n- GenomeScope\n    - Linear plot\n    - Log plot\n    - Transformed linear plot\n    - Transformed log plot\n    - Summary\n    - Model\n    - Model parameteres\n- RDeval for PacBio Hifi Reads QC\n    - Reads statistics\n    - HTML report\n- Mash QC, heatmap of distance between Hifi datasets\n  \n",
-        "updated": "2025-10-30T00:00:00",
+        "updated": "2025-11-10T00:00:00",
         "categories": [],
         "collections": [
             "Vertebrate Genome Project"
@@ -1044,21 +1044,10 @@
         "trsID": "#workflow/github.com/iwc-workflows/Assembly-Hifi-HiC-phasing-VGP4/main",
         "iwcID": "assembly-hifi-hic-phasing-vgp4-main",
         "readme": "# Genome Assembly from Hifi reads with HiC phasing - VGP4\n\nGenerate phased assembly based on PacBio Hifi Reads using HiC data from the same individual for assembly phasing. Part of the VGP workflow suite, it needs to be run after the k-mer profiling workflow VGP1.\n\n## Inputs\n\n1. Hifi long reads [fastq].\n2. Trim Hi-C reads ? If yes, trim 5 bases at the beginning of each reads. Use with some Arima Hi-C data if the contact map looks \"noisy\".\n3. Paired collection of Hi-C reads [fastq].\n4. Genome profile summary generated by Genomescope [txt] generated by VGP1 workflow.\n5. K-mer database [meryldb] generated by VGP1 workflow.\n6. Database to use for Busco lineages. Recommended : latest version.\n7. Lineage. Select the taxonomic lineage of the assembled species.  \n8. Name of first assembly.\n9. Name of second assembly.\n10. Bits for bloom filter. Change for large genomes to save memory.\n11. Homozygous Read Coverage. Optional: specify if the coverage detected by Genomescope in VGP1 in not satisfactory.\n12. Genomescope model parameters [tabular] generated by VGP1 workflow.\n\n## Outputs\n\n1. Haplotype 1 assembly ([fasta] and [gfa])\n2. Haplotype 2 assembly ([fasta] and [gfa])\n3. Trimmed Hi-C reads collection\n4. QC: MultiQC report for HiFi reads trimming\n5. QC: Compleasm report for both assemblies\n6. QC: Merqury report for both assemblies\n7. QC: Assembly statistics for both assemblies\n8. QC: Nx plot for both assemblies\n9. QC: Size plot for both assemblies\n",
-        "updated": "2025-09-30T00:00:00",
+        "updated": "2025-10-27T00:00:00",
         "categories": [],
         "collections": [
             "Vertebrate Genome Project"
-        ]
-    },
-    {
-        "name": "main",
-        "trsID": "#workflow/github.com/iwc-workflows/annotation-helixer/main",
-        "iwcID": "annotation-helixer-main",
-        "readme": "# Genome annotation workflow with Helixer\n\nThis workflow annotates a genome using Helixer and evaluates the quality of the annotation with BUSCO and Genome Annotation Statistics. GFFRead is used to extract predicted protein sequences, and both BUSCO and OMArk assess proteome quality. The final annotation can be visualized interactively using JBrowse.\n\n\n**Helixer** is an annotation software with a new and different approach: it performs evidence-free predictions (no need for RNASeq data or sequence aligments), using Graphics Processing Unit (GPU), with a much faster execution time. The annotation is based on the development and use of a cross-species deep learning model. The software is used to configure and train models for ab initio prediction of gene structure. In other words, it identifies the base pairs in a genome that belong to the UTR/CDS/Intron genes.\n\n## Workflow steps\n- Genome annotation with **Helixer**\n- Extraction of predicted proteins from annotation with **GFFRead**\n- Evaluation of annotation\n    - **Genome Annotation Statistics**\n    - **BUSCO** (on genome and predicted proteins)\n- Proteome quality assessment with **OMArk**\n- Visualization of annotation with **JBrowse**\n\n## Input data\nThe ollowing input files are required for the workflow:\n- Genome sequence (FASTA format): The genome to be annotated. Used by Helixer, Genome Annotation Statistics, BUSCO, GFFRead, and JBrowse.\n\n## Output data\nThe workflow generates the following outputs:\n- Annotation file (GFF3): Contains the final consensus gene models produced by Helixer.\n- BUSCO results: Assess the completeness of the annotation and include:\n    - A summary of results.\n    - A table of all searched BUSCO genes with their status.\n    - A table of missing BUSCO genes.\n- Annotation statistics: Summary and graphical analyses of the annotation, produced by Genome Annotation Statistics.\n- Protein sequences (FASTA): Predicted from the annotation using GFFRead.\n- OMArk report: completeness, consistency, and contamination of the predicted proteome.\n- Genome browser visualization (HTML): An interactive genome view produced by JBrowse.",
-        "updated": "2025-07-18T00:00:00",
-        "categories": [],
-        "collections": [
-            "Genome Annotation"
         ]
     },
     {
@@ -1082,6 +1071,15 @@
         "collections": [
             "Genome Annotation"
         ]
+    },
+    {
+        "name": "main",
+        "trsID": "#workflow/github.com/iwc-workflows/annotation-braker3/main",
+        "iwcID": "annotation-braker3-main",
+        "readme": "# Genome annotation workflow with Braker3\n\nThis workflow allows annotation of a eukaryotic genome using Braker3 and evaluates the quality of the annotation using BUSCO and genome annotation statistics. The annotation can then be improved, normalized, and visualized using additional tools.\n\n**Braker3** is an automated bioinformatics tool that uses RNA-seq and protein data to annotate genomes. It integrates GeneMark-ETP and AUGUSTUS software to predict genes with a high degree of precision. By combining the results of these two tools, Braker3 generates a final file containing gene annotations with strong extrinsic support (i.e. based on external experimental data).\n\n## Workflow Steps\n\n- Annotation with Braker3: Braker3 uses the genome sequence, protein sequences, and alignments from RNA-seq.\n- Quality Evaluation:\n    - Run Fasta Statistics to assess genome assembly quality.\n    - Use BUSCO to evaluate annotation completeness.\n- Sequence Extraction: Extract predicted protein sequences using GFFRead for downstream analysis.\n- Visualization: Load the genome sequence and annotation into JBrowse for interactive browsing.\n\n## Input data\nThe following input files are required for the workflow:\n- Soft Masked genome sequence (FASTA format): The genome to be annotated. Used by Braker3, Fasta Statistics, and BUSCO.\n- Protein sequences (FASTA format): Evidence to assist annotation in Braker3.\n- Alignments from RNA-seq (BAM format): Alignments used as evidence by Braker3.\n\n## Output Data\nThe workflow generates the following outputs:\n- Annotation file (GFF3): Contains the final consensus gene models produced by Braker3.\n- Genome statistics: A tabular file summarizing contig sizes and base content, produced by Fasta Statistics.\n- BUSCO results: Assess the completeness of the annotation and include:\n    - A summary of results.\n    - A table of all searched BUSCO genes with their status.\n    - A table of missing BUSCO genes.\n- Protein sequences (FASTA): Predicted from the annotation using GFFRead.\n- Genome browser visualization (HTML): An interactive genome view produced by JBrowse.",
+        "updated": "2025-12-05T00:00:00",
+        "categories": [],
+        "collections": []
     },
     {
         "name": "main",
@@ -1234,7 +1232,7 @@
         "trsID": "#workflow/github.com/iwc-workflows/short-read-qc-trimming/main",
         "iwcID": "short-read-qc-trimming-main",
         "readme": "# Short-read quality control and trimming\n\nBefore starting any analysis, it is always a good idea to assess the quality of the input data and to discard poor-quality base content by trimming and filtering reads.\n\nThis workflow takes paired-end Illumina (**short-reads**) fastq(.gz) files and executes the following steps:\n1. Quality control and trimming using **fastp**\n2. Aggregation of the quality control reports using **MultiQC**\n\n## Input Datasets\n\n- A list of paired datasets corresponding to paired-end raw reads in `fastqsanger` or `fastqsanger.gz` format.\n- Qualified quality score: The quality value that a base is qualified to have.\n- Minimal read length: Reads shorter than this value will be discarded.\n- Cutting mean quality: The bases in the sliding window with mean quality below this value will be cut.\n- [Optional] Adapter to remove on forward reads and reverse reads\n\n## Output Datasets\n\n- A list of paired datasets corresponding to paired-end **trimmed** reads in `fastqsanger` or `fastqsanger.gz`, ready for further analysis.\n- List of `JSON` reports of fastp for each sample that could be used as inputs for extra MultiQC\n- MultiQC report in HTML",
-        "updated": null,
+        "updated": "2025-12-08T00:00:00",
         "categories": [],
         "collections": []
     }
