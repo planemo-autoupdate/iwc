@@ -12,7 +12,6 @@
     "format-version": "0.1",
     "license": "MIT",
     "name": "MAGs taxonomy annotation",
-    "release": "0.1",
     "report": {
         "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
     },
@@ -25,7 +24,7 @@
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "IProvide a collection of MAGs from dREP or another binning tool.",
+                    "description": "Provide a collection of MAGs from dREP or another binning tool.",
                     "name": "Sequence collection"
                 }
             ],
@@ -73,7 +72,7 @@
         },
         "2": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.5.2+galaxy1",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.6.1+galaxy0",
             "errors": null,
             "id": 2,
             "input_connections": {
@@ -120,16 +119,16 @@
                     "output_name": "output_summary"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.5.2+galaxy1",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/gtdbtk_classify_wf/gtdbtk_classify_wf/2.6.1+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "53a019316350",
+                "changeset_revision": "7209f32a9e9d",
                 "name": "gtdbtk_classify_wf",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"advanced\": {\"min_perc_aa\": \"10\", \"force\": false, \"min_af\": \"0.65\", \"full_tree\": false, \"output_process_log\": false}, \"gtdbtk_db\": {\"__class__\": \"ConnectedValue\"}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
-            "tool_version": "2.5.2+galaxy1",
+            "tool_version": "2.6.1+galaxy0",
             "type": "tool",
             "uuid": "6442ff6d-e673-4049-94a6-cb56ef6eee6f",
             "when": null,
@@ -754,12 +753,7 @@
                     "output_name": "out_file1"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Replace Text",
-                    "name": "infile"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "Replace Text",
             "outputs": [
@@ -780,7 +774,7 @@
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"infile\": {\"__class__\": \"RuntimeValue\"}, \"replacements\": [{\"__index__\": 0, \"column\": \"1\", \"find_pattern\": \"gtdb_taxonomy\", \"replace_pattern\": \"classification\"}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"infile\": {\"__class__\": \"ConnectedValue\"}, \"replacements\": [{\"__index__\": 0, \"column\": \"1\", \"find_pattern\": \"gtdb_taxonomy\", \"replace_pattern\": \"classification\"}], \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
             "tool_version": "9.5+galaxy3",
             "type": "tool",
@@ -1033,6 +1027,7 @@
         }
     },
     "tags": [],
-    "uuid": "eaeedbea-0d34-40d3-945b-aa3ba779b60c",
-    "version": 1
+    "uuid": "2c1ca6b5-8a57-4b15-b56d-c42d52abf446",
+    "version": 1,
+    "release": "0.2"
 }
