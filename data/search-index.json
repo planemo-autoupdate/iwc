@@ -497,16 +497,16 @@
     {
         "iwcID": "qcxms-sdf-main",
         "trsID": "#workflow/github.com/iwc-workflows/qcxms-sdf/main",
-        "uuid": "d499a942-8e40-4d9b-b5c9-f685bba4d40b",
+        "uuid": "d8501098-c32d-4f42-8885-6c5aa09b0ec9",
         "name": "QCxMS Spectra Prediction from SDF",
         "annotation": "Workflow to predict EI mass spectra using QCxMS starting from a single SDF file, containing the 3D coordinates of all atoms in the molecule. These files can typically be obtained from PubChem.",
         "tags": [],
-        "release": "0.2",
+        "release": "0.3",
         "collections": [
             "Computational Chemistry",
             "Metabolomics"
         ],
-        "updated": "2025-12-15T00:00:00"
+        "updated": "2026-02-23T00:00:00"
     },
     {
         "iwcID": "openms-metaprosip-main",
@@ -790,6 +790,17 @@
         "updated": "2026-01-19T00:00:00"
     },
     {
+        "iwcID": "mags-taxonomy-annotation-main",
+        "trsID": "#workflow/github.com/iwc-workflows/mags-taxonomy-annotation/main",
+        "uuid": "eaeedbea-0d34-40d3-945b-aa3ba779b60c",
+        "name": "MAGs taxonomy annotation",
+        "annotation": "This workflow performs taxonomic classification of an input sequence collection (e.g., bins from SemiBin2 or MetaBat) using GTDB-Tk and maps the resulting taxonomy to NCBI taxIDs and names to reconcile differences between classification systems.\n",
+        "tags": [],
+        "release": "0.1",
+        "collections": [],
+        "updated": "2026-02-13T00:00:00"
+    },
+    {
         "iwcID": "metagenomic-raw-reads-amr-analysis-main",
         "trsID": "#workflow/github.com/iwc-workflows/metagenomic-raw-reads-amr-analysis/main",
         "uuid": "b3e1711f-9230-4770-bea1-b0b1de4760c5",
@@ -806,6 +817,19 @@
         "release": "1.1",
         "collections": [],
         "updated": "2026-02-20T00:00:00"
+    },
+    {
+        "iwcID": "binning-evaluation-main",
+        "trsID": "#workflow/github.com/iwc-workflows/binning-evaluation/main",
+        "uuid": "d699bf4f-6368-4362-97c1-cb03e81614ba",
+        "name": "MAGs binning evaluation",
+        "annotation": "This workflow performs multi-algorithm metagenomic binning evaluation using CONCOCT, MetaBAT2, SemiBin, and MaxBin2, optimizes results with DAS Tool and Binette, and evaluates all binning outputs against a gold standard using the CAMI AMBER framework to generate comprehensive HTML reports and performance metrics.",
+        "tags": [
+            "name:MAGs"
+        ],
+        "release": "1.0",
+        "collections": [],
+        "updated": "2025-08-31T00:00:00"
     },
     {
         "iwcID": "metagenomic-genes-catalogue-main",
@@ -1586,17 +1610,17 @@
     {
         "iwcID": "cutandrun-main",
         "trsID": "#workflow/github.com/iwc-workflows/cutandrun/main",
-        "uuid": "9df1ca74-5b5c-4a83-88e3-a3fdf44d8a68",
+        "uuid": "e171ebbb-42f3-404b-822b-a1c125204774",
         "name": "CUT&amp;RUN/CUT&amp;TAG Analysis: Protein-DNA Interaction Mapping",
         "annotation": "Complete CUT&amp;RUN/CUT&amp;TAG analysis workflow for paired-end sequencing data. Processes raw FASTQ files through adapter removal (cutadapt) and alignment (Bowtie2 with dovetail option enabled). Applies quality filtering (MAPQ \u2265 30, concordant pairs only), converts BAM to BED format, and performs peak calling using MACS2 with parameters optimized for the punctate signal profile characteristic of CUT&amp;RUN/CUT&amp;TAG experiments.",
         "tags": [
             "CUTnRUN"
         ],
-        "release": "0.15",
+        "release": "0.16",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-01-19T00:00:00"
+        "updated": "2026-03-02T00:00:00"
     },
     {
         "iwcID": "chipseq-pe-main",
@@ -1718,15 +1742,15 @@
     {
         "iwcID": "gromacs-mmgbsa-main",
         "trsID": "#workflow/github.com/iwc-workflows/gromacs-mmgbsa/main",
-        "uuid": "b7fba598-bf08-4193-a722-8962a1d28db8",
+        "uuid": "e2243b7b-4811-4adc-9160-4c866dc7a237",
         "name": "MMGBSA calculations with GROMACS",
         "annotation": "MMGBSA simulation and calculation",
         "tags": [],
-        "release": "0.1.6",
+        "release": "0.1.7",
         "collections": [
             "Computational Chemistry"
         ],
-        "updated": "2026-01-19T00:00:00"
+        "updated": "2026-02-23T00:00:00"
     },
     {
         "iwcID": "protein-ligand-complex-parameterization-main",
@@ -1744,14 +1768,14 @@
     {
         "iwcID": "gromacs-dctmd-main",
         "trsID": "#workflow/github.com/iwc-workflows/gromacs-dctmd/main",
-        "uuid": "14d0c29c-7479-468b-aca6-0128efa7a4e3",
+        "uuid": "e3cd5a16-6809-48f3-bd08-6ee17043d22f",
         "name": "dcTMD calculations with GROMACS",
         "annotation": "Perform dcTMD free energy simulations and calculations",
         "tags": [],
-        "release": "0.1.6",
+        "release": "0.1.7",
         "collections": [
             "Computational Chemistry"
         ],
-        "updated": "2026-01-19T00:00:00"
+        "updated": "2026-02-23T00:00:00"
     }
 ]
