@@ -821,15 +821,15 @@
     {
         "iwcID": "binning-evaluation-main",
         "trsID": "#workflow/github.com/iwc-workflows/binning-evaluation/main",
-        "uuid": "d699bf4f-6368-4362-97c1-cb03e81614ba",
+        "uuid": "73874fb0-bdec-472d-a056-97d6361e864a",
         "name": "MAGs binning evaluation",
         "annotation": "This workflow performs multi-algorithm metagenomic binning evaluation using CONCOCT, MetaBAT2, SemiBin, and MaxBin2, optimizes results with DAS Tool and Binette, and evaluates all binning outputs against a gold standard using the CAMI AMBER framework to generate comprehensive HTML reports and performance metrics.",
         "tags": [
             "name:MAGs"
         ],
-        "release": "1.0",
+        "release": "1.1",
         "collections": [],
-        "updated": "2025-08-31T00:00:00"
+        "updated": "2026-03-09T00:00:00"
     },
     {
         "iwcID": "metagenomic-genes-catalogue-main",
@@ -990,15 +990,15 @@
     {
         "iwcID": "hi-c-contact-map-for-assembly-manual-curation-main",
         "trsID": "#workflow/github.com/iwc-workflows/hi-c-contact-map-for-assembly-manual-curation/main",
-        "uuid": "4acc605f-befd-487d-854d-e2ca98c34ae7",
+        "uuid": "af433e73-ab8e-4f6c-ae4b-e9b1f560ef0e",
         "name": "PretextMap Generation from 1 or 2 haplotypes",
         "annotation": "This workflow generates Hi-C contact maps for genome assemblies in the Pretext format. It is compatible with one or 2 haplotypes. It includes tracks for PacBio read coverage, Gaps, and telomeres. The Pretext files can be open in PretextView for the manual curation of genome assemblies.",
         "tags": [],
-        "release": "2.0",
+        "release": "2.2",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2026-02-13T00:00:00"
+        "updated": "2026-03-10T00:00:00"
     },
     {
         "iwcID": "assembly-hifi-trio-phasing-vgp5-main",
@@ -1047,18 +1047,18 @@
     {
         "iwcID": "assembly-hifi-hic-phasing-vgp4-main",
         "trsID": "#workflow/github.com/iwc-workflows/Assembly-Hifi-HiC-phasing-VGP4/main",
-        "uuid": "bf1847cf-bf1b-4dd9-9c7c-b3432b2bf344",
+        "uuid": "d8343428-55ce-4b00-9f42-9fcc8fd0f317",
         "name": "Genome Assembly from Hifi reads with HiC phasing - VGP4",
         "annotation": "Assemble Genome using PacBio HiFi and HiC data from the same individual for phasing. Prerequisite: Run k-mer profiling workflow (VGP1). This workflow uses HiFiasm for contigging, and generates assembly statistics, BUSCO reports, Merqury histograms, and the genome assembly contigs in fasta and GFA format.",
         "tags": [
             "VGP",
             "Reviewed"
         ],
-        "release": "0.5",
+        "release": "0.6",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2025-10-27T00:00:00"
+        "updated": "2026-03-02T00:00:00"
     },
     {
         "iwcID": "scaffolding-bionano-vgp7-main",
@@ -1094,17 +1094,17 @@
     {
         "iwcID": "scaffolding-hic-vgp8-main",
         "trsID": "#workflow/github.com/iwc-workflows/Scaffolding-HiC-VGP8/main",
-        "uuid": "cb4d4f6f-ab78-4ef6-a09c-410200089d6e",
+        "uuid": "24c453a2-7236-41ff-9d00-65ac9339aaa1",
         "name": "Scaffolding with Hi-C data VGP8",
         "annotation": "This workflow performs the scaffolding of a genome assembly using HiC data with YAHS. Can be used on any assembly with Hi-C data, and the assembly in the gfa format.",
         "tags": [
             "VGP_curated"
         ],
-        "release": "3.3",
+        "release": "3.4",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2025-12-10T00:00:00"
+        "updated": "2026-03-09T00:00:00"
     },
     {
         "iwcID": "kmer-profiling-hifi-trio-vgp2-main",
@@ -1155,34 +1155,34 @@
     {
         "iwcID": "kmer-profiling-hifi-vgp1-main",
         "trsID": "#workflow/github.com/iwc-workflows/kmer-profiling-hifi-VGP1/main",
-        "uuid": "6fca6bab-49bb-4f91-a2f7-8f4da004afda",
+        "uuid": "97851585-7df2-4871-b481-9bc837f251d0",
         "name": "K-mer profiling and reads statistics VGP1",
         "annotation": "Evaluation of Pacbio Hifi Reads and genome profiling. Create Meryl Database used for the estimation of assembly parameters and quality control with Merqury. Part of the VGP pipeline.",
         "tags": [
             "Reviewed",
             "VGP"
         ],
-        "release": "0.7",
+        "release": "0.8",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2025-11-10T00:00:00"
+        "updated": "2026-01-30T00:00:00"
     },
     {
         "iwcID": "assembly-hifi-only-vgp3-main",
         "trsID": "#workflow/github.com/iwc-workflows/Assembly-Hifi-only-VGP3/main",
-        "uuid": "40ef3ef9-6781-42d6-baf0-70fe10cc9622",
+        "uuid": "4e7b37ab-0d8c-4a20-87de-784d43b6e65d",
         "name": "Genome Assembly from Hifi reads - VGP3",
         "annotation": "Generate a genome assembly based on PacBio HiFi reads. Part of the VGP suite, it needs to be run after the VGP1 k-mer profiling workflow. The assembly contigs are built using HiFiasm, and the workflow generates assembly statistics, BUSCO reports, Merqury plots, and the contigs in fasta and GFA formats.",
         "tags": [
             "VGP",
             "Reviewed"
         ],
-        "release": "0.3.4",
+        "release": "0.3.5",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2025-09-29T00:00:00"
+        "updated": "2026-03-12T00:00:00"
     },
     {
         "iwcID": "sra-manifest-to-concatenated-fastqs-main",
@@ -1307,15 +1307,14 @@
         "annotation": "Find and annotate variants in ampliconic SARS-CoV-2 Illumina sequencing data and classify samples with pangolin and nextclade",
         "tags": [
             "COVID-19",
-            "ARTIC",
-            "iwc"
+            "ARTIC"
         ],
-        "release": "0.3.1",
+        "release": "0.4",
         "collections": [
             "SARS-COV-2",
             "Variant Calling"
         ],
-        "updated": "2025-04-28T00:00:00"
+        "updated": "2026-03-04T00:00:00"
     },
     {
         "iwcID": "sars-cov-2-variation-reporting-covid-19-variation-reporting",
@@ -1444,6 +1443,21 @@
         "updated": "2023-11-20T00:00:00"
     },
     {
+        "iwcID": "ploidy-aware-genotype-calling-main",
+        "trsID": "#workflow/github.com/iwc-workflows/ploidy-aware-genotype-calling/main",
+        "uuid": "0706c30f-3bfb-42d5-bc55-a50d24824101",
+        "name": "Paired end variant and ploidy-aware genotype calling",
+        "annotation": "This workflow performs variant and genotype calling on whole-genome paired-end sequencing data from organisms of any ploidy to produce annotated VCF and TSV files",
+        "tags": [
+            "VeuPath",
+            "Diploid",
+            "FreeBayes"
+        ],
+        "release": "0.1.1",
+        "collections": [],
+        "updated": "2026-03-12T00:00:00"
+    },
+    {
         "iwcID": "short-read-qc-trimming-main",
         "trsID": "#workflow/github.com/iwc-workflows/short-read-qc-trimming/main",
         "uuid": "416f8154-eaa2-4583-b6b0-c80011ea84f8",
@@ -1479,7 +1493,7 @@
         "collections": [
             "Genome Annotation"
         ],
-        "updated": "2025-07-21T00:00:00"
+        "updated": "2025-12-04T00:00:00"
     },
     {
         "iwcID": "amr_gene_detection-main",
@@ -1502,7 +1516,7 @@
         "collections": [
             "Genome Annotation"
         ],
-        "updated": "2024-10-11T00:00:00"
+        "updated": "2025-12-01T00:00:00"
     },
     {
         "iwcID": "bacterial-quality-and-contamination-control-post-assembly-main",
@@ -1528,7 +1542,7 @@
     {
         "iwcID": "cgmlst-bacterial-genome-main",
         "trsID": "#workflow/github.com/iwc-workflows/cgmlst-bacterial-genome/main",
-        "uuid": "89d3386f-e826-417b-b078-6d9ed20aa5cf",
+        "uuid": "fc1621ad-d17d-4199-bd72-ffefd54425b2",
         "name": "core genome Multilocus Sequence Typing (cgMLST) of bacterial genome",
         "annotation": "This workflow performs core genome multilocus sequence typing (cgMLST) on contigs corresponding to one bacterial genome to characterize bacterial strains using curated reference schemes.",
         "tags": [
@@ -1539,13 +1553,57 @@
             "cgMLST",
             "allele-calling",
             "typing",
-            "core-genome MLST",
+            "core-genome-MLST",
             "genotyping",
-            "core genome multilocus sequence typing"
+            "core-genome-multi-locus-sequencetyping"
         ],
-        "release": "1.0",
+        "release": "1.1",
         "collections": [],
-        "updated": "2025-12-18T00:00:00"
+        "updated": "2026-03-02T00:00:00"
+    },
+    {
+        "iwcID": "hyphy-capheine-core-and-compare",
+        "trsID": "#workflow/github.com/iwc-workflows/hyphy/capheine-core-and-compare",
+        "uuid": "e1fbea6f-563e-40d1-b580-f97883fca29f",
+        "name": "CAPHEINE: Combined HyPhy Core and Compare",
+        "annotation": "Runs CAPHEINE selection analyses with optional foreground/background branch labeling for branch comparisons.",
+        "tags": [],
+        "release": "0.1",
+        "collections": [],
+        "updated": "2026-02-26T00:00:00"
+    },
+    {
+        "iwcID": "hyphy-hyphy-core",
+        "trsID": "#workflow/github.com/iwc-workflows/hyphy/hyphy-core",
+        "uuid": "d193df0d-c6b9-44b1-9517-7d6b3874d067",
+        "name": "HyPhy: Core",
+        "annotation": "Runs HyPhy BUSTED, FEL, MEME and PRIME analyses on a collection of fasta.",
+        "tags": [],
+        "release": "0.1",
+        "collections": [],
+        "updated": "2026-02-26T00:00:00"
+    },
+    {
+        "iwcID": "hyphy-hyphy-compare",
+        "trsID": "#workflow/github.com/iwc-workflows/hyphy/hyphy-compare",
+        "uuid": "9357601d-c7cf-4341-bf87-a5b0fca7e57b",
+        "name": "HyPhy: Compare",
+        "annotation": "This workflow runs HyPhy analyses Contrast-FEL and RELAX comparing foreground and reference branches. It consumes the per-gene codon-aware alignments and IQ-TREE phylogenies produced by the HyPhy preprocessing workflow.",
+        "tags": [],
+        "release": "0.1",
+        "collections": [],
+        "updated": "2026-02-26T00:00:00"
+    },
+    {
+        "iwcID": "hyphy-hyphy-preprocessing",
+        "trsID": "#workflow/github.com/iwc-workflows/hyphy/hyphy-preprocessing",
+        "uuid": "c4344db0-eac2-4915-aaec-5d8ea386f109",
+        "name": "HyPhy: Preprocessing ",
+        "annotation": "Generates codon-aware alignments and phylogenetic trees compatible with downstream HyPhy analyses.",
+        "tags": [],
+        "release": "0.1",
+        "collections": [],
+        "updated": "2026-02-26T00:00:00"
     },
     {
         "iwcID": "hic-hicup-cooler-hic-fastq-to-cool-hicup-cooler",
@@ -1610,17 +1668,17 @@
     {
         "iwcID": "cutandrun-main",
         "trsID": "#workflow/github.com/iwc-workflows/cutandrun/main",
-        "uuid": "e171ebbb-42f3-404b-822b-a1c125204774",
+        "uuid": "fbf8707b-e9f1-4289-acd8-720e50562432",
         "name": "CUT&amp;RUN/CUT&amp;TAG Analysis: Protein-DNA Interaction Mapping",
         "annotation": "Complete CUT&amp;RUN/CUT&amp;TAG analysis workflow for paired-end sequencing data. Processes raw FASTQ files through adapter removal (cutadapt) and alignment (Bowtie2 with dovetail option enabled). Applies quality filtering (MAPQ \u2265 30, concordant pairs only), converts BAM to BED format, and performs peak calling using MACS2 with parameters optimized for the punctate signal profile characteristic of CUT&amp;RUN/CUT&amp;TAG experiments.",
         "tags": [
             "CUTnRUN"
         ],
-        "release": "0.16",
+        "release": "0.17",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-03-02T00:00:00"
+        "updated": "2026-03-09T00:00:00"
     },
     {
         "iwcID": "chipseq-pe-main",
@@ -1742,15 +1800,15 @@
     {
         "iwcID": "gromacs-mmgbsa-main",
         "trsID": "#workflow/github.com/iwc-workflows/gromacs-mmgbsa/main",
-        "uuid": "e2243b7b-4811-4adc-9160-4c866dc7a237",
+        "uuid": "6e86133f-1656-4fcf-a14a-0a116c718299",
         "name": "MMGBSA calculations with GROMACS",
         "annotation": "MMGBSA simulation and calculation",
         "tags": [],
-        "release": "0.1.7",
+        "release": "0.1.8",
         "collections": [
             "Computational Chemistry"
         ],
-        "updated": "2026-02-23T00:00:00"
+        "updated": "2026-03-09T00:00:00"
     },
     {
         "iwcID": "protein-ligand-complex-parameterization-main",
