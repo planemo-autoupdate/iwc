@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.4] - 2026-03-23
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.1.0+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.2.0+galaxy0`
+
 ## [1.3] - 2026-02-16
 
 ### Automatic update

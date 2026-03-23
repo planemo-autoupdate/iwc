@@ -423,7 +423,7 @@
         },
         "12": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.1.0+galaxy0",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.2.0+galaxy0",
             "errors": null,
             "id": 12,
             "input_connections": {
@@ -474,16 +474,16 @@
                     "output_name": "report_json"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.1.0+galaxy0",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.2.0+galaxy0",
             "tool_shed_repository": {
-                "changeset_revision": "ff33957bf802",
+                "changeset_revision": "b2e9a56e5259",
                 "name": "fastp",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"duplicated_reads\": {\"handling_options\": {\"eval_dups\": \"--dont_eval_duplication\", \"__current_case__\": 0}}, \"filter_options\": {\"quality_filtering_options\": {\"disable_quality_filtering\": false, \"qualified_quality_phred\": \"30\", \"unqualified_percent_limit\": null, \"n_base_limit\": null}, \"length_filtering_options\": {\"disable_length_filtering\": false, \"length_required\": \"15\", \"length_limit\": null}, \"low_complexity_filter\": {\"enable_low_complexity_filter\": false, \"complexity_threshold\": null}}, \"output_options\": {\"report_html\": false, \"report_json\": true}, \"overrepresented_sequence_analysis\": {\"overrepresentation_analysis\": false, \"overrepresentation_sampling\": null}, \"read_mod_options\": {\"polyg_tail_trimming\": {\"trimming_select\": \"\", \"__current_case__\": 1, \"poly_g_min_len\": null}, \"polyx_tail_trimming\": {\"polyx_trimming_select\": \"\", \"__current_case__\": 1}, \"umi_processing\": {\"umi\": false, \"umi_loc\": null, \"umi_len\": null, \"umi_prefix\": null}, \"cutting_by_quality_options\": {\"cut_front_select\": {\"cut_front\": \"\", \"__current_case__\": 1}, \"cut_tail_select\": {\"cut_tail\": \"\", \"__current_case__\": 1}, \"cut_right_select\": {\"cut_right\": \"\", \"__current_case__\": 1}}, \"base_correction_options\": {\"correction\": false}}, \"single_paired\": {\"single_paired_selector\": \"paired_collection\", \"__current_case__\": 1, \"paired_input\": {\"__class__\": \"ConnectedValue\"}, \"merge_reads\": {\"merge\": \"\", \"__current_case__\": 1}, \"adapter_trimming_options\": {\"disable_adapter_trimming\": false, \"adapter_sequence1\": {\"__class__\": \"ConnectedValue\"}, \"adapter_sequence2\": {\"__class__\": \"ConnectedValue\"}, \"detect_adapter_for_pe\": false}, \"global_trimming_options\": {\"trim_front1\": null, \"trim_tail1\": null, \"trim_front2\": null, \"trim_tail2\": null}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
-            "tool_version": "1.1.0+galaxy0",
+            "tool_version": "1.2.0+galaxy0",
             "type": "tool",
             "uuid": "80d855a6-7a77-46e9-9124-9dd3d9d72cc1",
             "when": null,
@@ -1226,7 +1226,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "b2e0d283-2c66-4c31-bbc5-6178b06699c4"
+                "uuid": "d86132d6-e8cb-482a-a863-a23a48c83436"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -1822,7 +1822,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "7ab19915-a38c-4a25-a9d3-a8c6532d547e"
+                "uuid": "34d68953-f2e3-424a-9622-90f1f7c58f08"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -2596,7 +2596,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "3c75c87e-0e79-412e-91f1-68a2b961c113"
+                "uuid": "17afc5aa-e94f-43b9-890b-b0019aa9c5da"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -3434,7 +3434,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "a981c5d8-c8a0-4385-bfa7-33b75dd1f7fd"
+                "uuid": "75c2c96b-e478-4dc3-8159-4f3f45a01d4c"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -3458,7 +3458,7 @@
         "RNAseq",
         "transcriptomics"
     ],
-    "uuid": "236d4aec-98f4-4af1-a502-887b4f551ced",
+    "uuid": "95338c5d-7df8-4ede-85e7-27a834e1afd4",
     "version": 1,
-    "release": "1.3"
+    "release": "1.4"
 }
