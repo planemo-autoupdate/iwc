@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4] - 2026-03-23
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.1.0+galaxy0` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.2.0+galaxy0`
+- `toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_ref/bamtools_split_ref/2.5.2+galaxy2` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/bamtools_split_ref/bamtools_split_ref/2.5.3+galaxy0`
+
 ## [0.3] - 2026-02-09
 
 ### Changed
