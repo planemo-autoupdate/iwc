@@ -39,7 +39,6 @@
     ],
     "format-version": "0.1",
     "license": "MIT",
-    "release": "0.2",
     "name": "Functional annotation of sequences",
     "report": {
         "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
@@ -797,7 +796,7 @@
                     }
                 },
                 "tags": [],
-                "uuid": "e109aec1-e620-4101-ba74-97c00a7b2159"
+                "uuid": "3c528d4b-b4f6-41a8-b854-acc5a82482b8"
             },
             "tool_id": null,
             "type": "subworkflow",
@@ -807,7 +806,7 @@
         },
         "6": {
             "annotation": "",
-            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/collection_element_identifiers/collection_element_identifiers/0.0.2",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/collection_element_identifiers/collection_element_identifiers/0.0.3",
             "errors": null,
             "id": 6,
             "input_connections": {
@@ -838,16 +837,16 @@
                     "output_name": "output"
                 }
             },
-            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/collection_element_identifiers/collection_element_identifiers/0.0.2",
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/collection_element_identifiers/collection_element_identifiers/0.0.3",
             "tool_shed_repository": {
-                "changeset_revision": "d3c07d270a50",
+                "changeset_revision": "3e27acfa4830",
                 "name": "collection_element_identifiers",
                 "owner": "iuc",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
             "tool_state": "{\"input_collection\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
             "tool_uuid": null,
-            "tool_version": "0.0.2",
+            "tool_version": "0.0.3",
             "type": "tool",
             "uuid": "53019ea6-e2ff-449d-9d21-75425a4bc29c",
             "when": null,
@@ -1285,6 +1284,7 @@
         }
     },
     "tags": [],
-    "uuid": "954e92e2-ba0e-4748-9888-67792bb6baec",
-    "version": 1
+    "uuid": "b3eff3cd-1fac-4dba-a138-fc079ddfb5bb",
+    "version": 1,
+    "release": "0.3"
 }
