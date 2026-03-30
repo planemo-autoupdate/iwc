@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2] - 2026-03-30
+
+### Automatic update
+- `toolshed.g2.bx.psu.edu/repos/iuc/collection_element_identifiers/collection_element_identifiers/0.0.2` was updated to `toolshed.g2.bx.psu.edu/repos/iuc/collection_element_identifiers/collection_element_identifiers/0.0.3`
+
 ## [1.1] - 2026-03-09
 
 ### Automatic update
