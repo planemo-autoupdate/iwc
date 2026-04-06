@@ -244,17 +244,17 @@
     {
         "iwcID": "scaffolding-hic-vgp8-main",
         "trsID": "#workflow/github.com/iwc-workflows/Scaffolding-HiC-VGP8/main",
-        "uuid": "24c453a2-7236-41ff-9d00-65ac9339aaa1",
+        "uuid": "60a71941-e828-4f35-83ae-f46c7732becb",
         "name": "Scaffolding with Hi-C data VGP8",
         "annotation": "This workflow performs the scaffolding of a genome assembly using HiC data with YAHS. Can be used on any assembly with Hi-C data, and the assembly in the gfa format.",
         "tags": [
             "VGP_curated"
         ],
-        "release": "3.4",
+        "release": "3.5",
         "collections": [
             "Vertebrate Genome Project"
         ],
-        "updated": "2026-03-09T00:00:00"
+        "updated": "2026-03-30T00:00:00"
     },
     {
         "iwcID": "mitogenome-assembly-vgp0-main",
