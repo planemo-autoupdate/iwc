@@ -219,107 +219,107 @@
     {
         "iwcID": "chipseq-sr-main",
         "trsID": "#workflow/github.com/iwc-workflows/chipseq-sr/main",
-        "uuid": "695f9da2-e902-4818-ac7b-ad2d2e94668d",
+        "uuid": "808d464a-19aa-4ccf-896d-2a3f9b29185e",
         "name": "ChIP-seq Analysis: Single-End Read Processing",
         "annotation": "Complete ChIP-seq analysis for single-end sequencing data. Processes raw FASTQ files through adapter removal (fastp), alignment to reference genome (Bowtie2), and quality filtering (MAPQ greater than 30). Peak calling with MACS2 uses a fixed extension of 200bp to identify protein-DNA binding sites. Generates alignment files, coverage, peak calls, and quality metrics for downstream analysis.",
         "tags": [
             "ChIP"
         ],
-        "release": "1.1",
+        "release": "1.2",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-22T00:00:00"
     },
     {
         "iwcID": "atacseq-main",
         "trsID": "#workflow/github.com/iwc-workflows/atacseq/main",
-        "uuid": "87c3f4cf-1b88-43dc-849b-5d23c9da1f29",
+        "uuid": "918c875f-3b6a-4115-9848-ca0896b362a8",
         "name": "ATAC-seq Analysis: Chromatin Accessibility Profiling",
         "annotation": "Complete ATAC-seq analysis pipeline for paired-end reads. Processes raw FASTQ data through adapter and bad quality removal (fastp), alignment (Bowtie2 end-to-end), and filtering (removes MT reads, discordant pairs, low mapping quality below 30, PCR duplicates). Generates 5' cut site pileups (\u00b1100bp), performs peak calling, and quantifies reads in 1kb summit-centered regions. Produces two normalized coverage tracks (per million mapped reads and per million reads in peaks) and fragment length distribution plots for quality assessment.",
         "tags": [
             "ATACseq"
         ],
-        "release": "2.0",
+        "release": "2.1",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2025-10-03T00:00:00"
+        "updated": "2026-06-22T00:00:00"
     },
     {
         "iwcID": "consensus-peaks-consensus-peaks-chip-sr",
         "trsID": "#workflow/github.com/iwc-workflows/consensus-peaks/consensus-peaks-chip-sr",
-        "uuid": "e31add46-af78-4685-bad4-c847749e9094",
+        "uuid": "a9c3085f-083d-43ec-9425-9d36b322fee5",
         "name": "Consensus Peak Calling for ChIP-seq Single-End Replicates",
         "annotation": "Identifies high-confidence consensus peaks from ChIP-seq single-end replicate experiments. The workflow calls peaks on individual replicates and identifies their intersection. To control for sequencing depth differences, it subsamples all replicates to the smallest library size, performs peak calling on the combined normalized data, and retains only peaks whose summits overlap with intersections from a user-defined minimum number of replicates.",
         "tags": [
             "ATAC-seq"
         ],
-        "release": "1.5",
+        "release": "1.6",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-01T00:00:00"
     },
     {
         "iwcID": "consensus-peaks-consensus-peaks-chip-pe",
         "trsID": "#workflow/github.com/iwc-workflows/consensus-peaks/consensus-peaks-chip-pe",
-        "uuid": "cd9d81ad-3b83-4507-a87f-51b532e1113a",
+        "uuid": "c95f796f-e433-4c76-9327-3b206fca1644",
         "name": "Consensus Peak Calling for ChIP-seq Paired-End Replicates",
         "annotation": "Identifies high-confidence consensus peaks from ChIP-seq paired-end replicate experiments. The workflow calls peaks on individual replicates and identifies their intersection. To control for sequencing depth differences, it subsamples all replicates to the smallest library size, performs peak calling on the combined normalized data, and retains only peaks whose summits overlap with intersections from a user-defined minimum number of replicates.",
         "tags": [
             "ATAC-seq"
         ],
-        "release": "1.5",
+        "release": "1.6",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-01T00:00:00"
     },
     {
         "iwcID": "consensus-peaks-consensus-peaks-atac-cutandrun",
         "trsID": "#workflow/github.com/iwc-workflows/consensus-peaks/consensus-peaks-atac-cutandrun",
-        "uuid": "515c3b11-965d-414c-bad0-0258a4c2f430",
+        "uuid": "d2636dbe-8e14-4d3a-84e7-f92740d8f03c",
         "name": "Consensus Peak Calling for ATAC-seq and CUT and RUN Replicates",
         "annotation": "Identifies high-confidence consensus peaks from ATAC-seq or CUT and RUN replicate experiments. The workflow calls peaks on individual replicates and identifies their intersection. To control for sequencing depth differences, it subsamples all replicates to the smallest library size, performs peak calling on the combined normalized data, and retains only peaks whose summits overlap with intersections from a user-defined minimum number of replicates.",
         "tags": [
             "ATAC-seq"
         ],
-        "release": "1.5",
+        "release": "1.6",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-01T00:00:00"
     },
     {
         "iwcID": "hic-hicup-cooler-hic-fastq-to-cool-hicup-cooler",
         "trsID": "#workflow/github.com/iwc-workflows/hic-hicup-cooler/hic-fastq-to-cool-hicup-cooler",
-        "uuid": "2196fbff-317e-437d-a022-696a1f95a850",
+        "uuid": "c7a0d47c-cb39-4897-a0a5-aa93d588b179",
         "name": "Hi-C Processing: FASTQ to Balanced Cool Files",
         "annotation": "Comprehensive Hi-C data processing workflow that converts paired-end FASTQ files to balanced contact matrices. Uses HiCUP for pre-processing (adapter trimming, mapping, filtering) with fragment midpoint coordinate assignment, filters reads by mapping quality, and generates sorted tabix files. The final output is a balanced cool file at user-specified resolution created with cooler, ready for multi-resolution contact matrix analysis.",
         "tags": [
             "Hi-C"
         ],
-        "release": "0.3",
+        "release": "0.4",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2023-09-08T00:00:00"
+        "updated": "2026-03-02T00:00:00"
     },
     {
         "iwcID": "hic-hicup-cooler-chic-fastq-to-cool-hicup-cooler",
         "trsID": "#workflow/github.com/iwc-workflows/hic-hicup-cooler/chic-fastq-to-cool-hicup-cooler",
-        "uuid": "2a89cbe4-a69f-4bff-9465-2e04b0217e35",
+        "uuid": "a688036a-9465-4239-b939-6f06a7b5fc7e",
         "name": "Capture Hi-C Processing: FASTQ to Balanced Cool Files",
         "annotation": "End-to-end processing of Capture Hi-C paired-end sequencing data. Transforms raw FASTQ files into balanced contact matrices using HiCUP for processing Hi-C reads (adapter trimming, mapping, filtering for valid pairs) with additional filtering for MAPQ and captured regions. The workflow generates sorted tabix files via cooler and produces balanced cool files at user-specified resolution for downstream analysis and visualization.",
         "tags": [
             "Hi-C"
         ],
-        "release": "0.3",
+        "release": "0.4",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2023-09-08T00:00:00"
+        "updated": "2026-03-02T00:00:00"
     },
     {
         "iwcID": "hic-hicup-cooler-hic-juicermediumtabix-to-cool-cooler",
@@ -330,56 +330,56 @@
         "tags": [
             "Hi-C"
         ],
-        "release": "0.3",
+        "release": "0.4",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2023-09-08T00:00:00"
+        "updated": "2026-03-02T00:00:00"
     },
     {
         "iwcID": "hic-hicup-cooler-hic-fastq-to-pairs-hicup",
         "trsID": "#workflow/github.com/iwc-workflows/hic-hicup-cooler/hic-fastq-to-pairs-hicup",
-        "uuid": "48f579ea-eaac-49ee-b38f-93c82f8b7d76",
+        "uuid": "c41bc6b1-a2d5-4a73-8604-7d7fdccf5bd8",
         "name": "Hi-C Data Processing: FASTQ to Valid Interaction Pairs",
         "annotation": "Processes Hi-C paired-end FASTQ files to generate validated interaction pairs using HiCUP. The workflow truncates reads at ligation junctions, maps to reference genome, assigns to restriction fragments, and filters out experimental artifacts (self-ligated, dangling ends, internal fragments, and size outliers). Removes duplicates and converts outputs to formats compatible with Juicebox/cooler using fragment midpoints as coordinates. Final filtering by mapping quality ensures high-confidence interaction data.",
         "tags": [
             "Hi-C"
         ],
-        "release": "0.3",
+        "release": "0.4",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2023-09-08T00:00:00"
+        "updated": "2026-03-02T00:00:00"
     },
     {
         "iwcID": "chipseq-pe-main",
         "trsID": "#workflow/github.com/iwc-workflows/chipseq-pe/main",
-        "uuid": "8101beec-7eaa-48ef-adc3-6a4545b845cc",
+        "uuid": "ebf972c1-6dcb-44fd-a29c-e56869ae8bcd",
         "name": "ChIP-seq Analysis: Paired-End Read Processing",
         "annotation": "Complete ChIP-seq analysis for paired-end sequencing data. Processes raw FASTQ files through adapter removal (fastp), alignment to reference genome (Bowtie2), and stringent quality filtering (MAPQ greater than 30, concordant pairs only). Peak calling with MACS2 optimized for paired-end reads identifies protein-DNA binding sites. Generates alignment files, coverage, peak calls, and quality metrics for downstream analysis.",
         "tags": [
             "ChIP"
         ],
-        "release": "1.1",
+        "release": "1.2",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-22T00:00:00"
     },
     {
         "iwcID": "cutandrun-main",
         "trsID": "#workflow/github.com/iwc-workflows/cutandrun/main",
-        "uuid": "c25eb620-b51b-4962-b72c-9ee9170952e0",
+        "uuid": "4739ea90-30e3-46f4-83df-4e43290031cf",
         "name": "CUT&amp;RUN/CUT&amp;TAG Analysis: Protein-DNA Interaction Mapping",
         "annotation": "Complete CUT&amp;RUN/CUT&amp;TAG analysis workflow for paired-end sequencing data. Processes raw FASTQ files through adapter removal (cutadapt) and alignment (Bowtie2 with dovetail option enabled). Applies quality filtering (MAPQ \u2265 30, concordant pairs only), converts BAM to BED format, and performs peak calling using MACS2 with parameters optimized for the punctate signal profile characteristic of CUT&amp;RUN/CUT&amp;TAG experiments.",
         "tags": [
             "CUTnRUN"
         ],
-        "release": "0.18",
+        "release": "0.19",
         "collections": [
             "Epigenetics"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-01T00:00:00"
     },
     {
         "iwcID": "variation-reporting-main",
@@ -670,15 +670,15 @@
     {
         "iwcID": "sra-manifest-to-concatenated-fastqs-main",
         "trsID": "#workflow/github.com/iwc-workflows/sra-manifest-to-concatenated-fastqs/main",
-        "uuid": "f3a15899-64ba-4df8-ac94-d1bce448dfb4",
+        "uuid": "9634f39c-d628-4a48-842c-1e0d7f7b3cda",
         "name": "sra_manifest_to_concatenated_fastqs_parallel",
         "annotation": "This workflow takes as input a SRA_manifest from SRA Run Selector and will generate one fastq file or fastq pair of file for each experiment (concatenated multiple runs if necessary). Output will be relabelled to match the column specified by the user.",
         "tags": [],
-        "release": "0.9",
+        "release": "0.10",
         "collections": [
             "Data Fetching"
         ],
-        "updated": "2026-04-09T00:00:00"
+        "updated": "2026-04-20T00:00:00"
     },
     {
         "iwcID": "bacterial-genome-assembly-main",
@@ -1646,34 +1646,34 @@
     {
         "iwcID": "fastq-to-matrix-10x-scrna-seq-fastq-to-matrix-10x-cellplex",
         "trsID": "#workflow/github.com/iwc-workflows/fastq-to-matrix-10x/scrna-seq-fastq-to-matrix-10x-cellplex",
-        "uuid": "f2c9e3b0-e187-4cad-900b-43e64332aafa",
+        "uuid": "8edfbfc7-a372-4517-94bb-789ef0ce14c2",
         "name": "Single-Cell RNA-seq Preprocessing: 10X Genomics CellPlex Multiplexed Samples",
         "annotation": "Comprehensive preprocessing for 10X Genomics CellPlex multiplexed single-cell RNA-seq data. Processes Cell Multiplexing Oligo (CMO) FASTQ files with CITE-seq-Count including required CellPlex-specific translation steps. Simultaneously processes gene expression FASTQ files with STARsolo and DropletUtils for alignment and cell filtering, and formats outputs for seamless import into Seurat/Scanpy (Read10X function).",
         "tags": [
             "name:single-cell"
         ],
-        "release": "0.6.5",
+        "release": "0.6.6",
         "collections": [
             "Transcriptomics",
             "Single Cell"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-22T00:00:00"
     },
     {
         "iwcID": "fastq-to-matrix-10x-scrna-seq-fastq-to-matrix-10x-v3",
         "trsID": "#workflow/github.com/iwc-workflows/fastq-to-matrix-10x/scrna-seq-fastq-to-matrix-10x-v3",
-        "uuid": "5a6a0795-efc3-47d2-b750-a35599802cb7",
+        "uuid": "146517ca-6099-4f43-bbb0-6412a14de13a",
         "name": "Single-Cell RNA-seq Preprocessing: 10X Genomics v3 to Seurat and Scanpy Compatible Format",
         "annotation": "Complete preprocessing pipeline for 10X Genomics v3 single-cell RNA-seq data. Aligns raw FASTQ files using STARsolo, performs cell calling and quality filtering with DropletUtils, and formats outputs for seamless import into Seurat/Scanpy (Read10X function).",
         "tags": [
             "name:single-cell"
         ],
-        "release": "0.6.5",
+        "release": "0.6.6",
         "collections": [
             "Transcriptomics",
             "Single Cell"
         ],
-        "updated": "2026-04-06T00:00:00"
+        "updated": "2026-06-22T00:00:00"
     },
     {
         "iwcID": "velocyto-velocyto-on10x-from-bundled",
@@ -1708,30 +1708,30 @@
     {
         "iwcID": "baredsc-baredsc-1d-lognorm",
         "trsID": "#workflow/github.com/iwc-workflows/baredsc/baredSC-1d-logNorm",
-        "uuid": "1ea0b92d-d863-435a-96ac-1e547fdbc994",
+        "uuid": "2688010b-c6dc-4de1-8c9c-946d2478ae33",
         "name": "Single-Cell Mixture Analysis: baredSC 1D Log-Normalized Models",
         "annotation": "Applies baredSC algorithm to fit and combine one-dimensional Gaussian mixture models (from 1 to N components) on log-normalized single-cell gene expression data. Enables identification of subpopulations based on expression of genes of interest and provides statistical assessment of the optimal number of components in heterogeneous cell populations.",
         "tags": [],
-        "release": "0.6",
+        "release": "0.7",
         "collections": [
             "Transcriptomics",
             "Single Cell"
         ],
-        "updated": "2025-03-10T00:00:00"
+        "updated": "2026-01-19T00:00:00"
     },
     {
         "iwcID": "baredsc-baredsc-2d-lognorm",
         "trsID": "#workflow/github.com/iwc-workflows/baredsc/baredSC-2d-logNorm",
-        "uuid": "1936816b-958a-4140-b839-58be4cdae1a5",
+        "uuid": "3a2b114d-558c-4396-b005-300184d555ba",
         "name": "Single-Cell Mixture Analysis: baredSC 2D Log-Normalized Models",
         "annotation": "Applies baredSC algorithm to fit and combine two-dimensional Gaussian mixture models (from 1 to N components) on log-normalized single-cell gene expression data. Enables identification of subpopulations based on co-expression patterns of two genes of interest and provides statistical assessment of the optimal number of components in heterogeneous cell populations.",
         "tags": [],
-        "release": "0.6",
+        "release": "0.7",
         "collections": [
             "Transcriptomics",
             "Single Cell"
         ],
-        "updated": "2025-03-10T00:00:00"
+        "updated": "2026-01-19T00:00:00"
     },
     {
         "iwcID": "scanpy-clustering-main",
@@ -1840,18 +1840,18 @@
     {
         "iwcID": "rnaseq-pe-main",
         "trsID": "#workflow/github.com/iwc-workflows/rnaseq-pe/main",
-        "uuid": "236d4aec-98f4-4af1-a502-887b4f551ced",
+        "uuid": "e1930fd2-404e-4159-ac35-fc90e5ee054b",
         "name": "RNA-Seq Analysis: Paired-End Read Processing and Quantification",
         "annotation": "Complete RNA-Seq analysis for paired-end data: Processes raw FASTQ data through adapter and bad quality removal (fastp), alignment with STAR using ENCODE parameters, gene quantification via multiple methods (STAR and featureCounts), and expression calculation (FPKM with Cufflinks/StringTie, normalized coverage with bedtools). Produces count tables, normalized expression values, and genomic coverage tracks. Supports stranded and unstranded libraries, generating both HTSeq-compatible counts and normalized measures for downstream analysis.",
         "tags": [
             "RNAseq",
             "transcriptomics"
         ],
-        "release": "1.3",
+        "release": "1.4",
         "collections": [
             "Transcriptomics"
         ],
-        "updated": "2026-02-16T00:00:00"
+        "updated": "2026-06-24T00:00:00"
     },
     {
         "iwcID": "goseq-main",
@@ -1869,46 +1869,46 @@
     {
         "iwcID": "rnaseq-sr-main",
         "trsID": "#workflow/github.com/iwc-workflows/rnaseq-sr/main",
-        "uuid": "ff816f37-b452-4d56-b573-969b3f4ceed0",
+        "uuid": "cf089938-1be2-42c8-9453-ff1ca4152c02",
         "name": "RNA-Seq Analysis: Single-End Read Processing and Quantification",
         "annotation": "Complete RNA-Seq analysis for single-end data:  Processes raw FASTQ data through adapter and bad quality removal (fastp), alignment with STAR using ENCODE parameters, gene quantification via multiple methods (STAR and featureCounts), and expression calculation (FPKM with Cufflinks/StringTie, normalized coverage with bedtools). Produces count tables, normalized expression values, and genomic coverage tracks. Supports stranded and unstranded libraries, generating both HTSeq-compatible counts and normalized measures for downstream analysis.",
         "tags": [
             "RNAseq",
             "transcriptomics"
         ],
-        "release": "1.3",
+        "release": "1.4",
         "collections": [
             "Transcriptomics"
         ],
-        "updated": "2026-02-16T00:00:00"
+        "updated": "2026-06-24T00:00:00"
     },
     {
         "iwcID": "rnaseq-de-main",
         "trsID": "#workflow/github.com/iwc-workflows/rnaseq-de/main",
-        "uuid": "31e25911-2bd4-4c1d-a360-3b79078e5099",
+        "uuid": "c2c74958-ddc7-4e31-b223-785f7c2977d8",
         "name": "RNA-Seq Differential Expression Analysis with Visualization",
         "annotation": "Identifies differentially expressed genes between exactly two experimental conditions from count tables. The workflow performs statistical testing, applies filters based on adjusted p-value and log2 fold change thresholds, and generates publication-quality visualizations including volcano plots, MA plots, and heatmaps. Takes two collections of count tables as input and produces filtered gene lists and interactive plots for interpreting expression differences. Optimal for simple two-condition experimental designs.",
         "tags": [
             "transcriptomics",
             "RNAseq"
         ],
-        "release": "0.8",
+        "release": "0.9",
         "collections": [
             "Transcriptomics"
         ],
-        "updated": "2026-02-23T00:00:00"
+        "updated": "2026-04-27T00:00:00"
     },
     {
         "iwcID": "brew3r-main",
         "trsID": "#workflow/github.com/iwc-workflows/brew3r/main",
-        "uuid": "ac8ef6cb-1621-4b73-9362-8a460ef3c3a2",
+        "uuid": "6fe5a54d-0c37-4138-bf56-079ab6cba948",
         "name": "BREW3R",
         "annotation": "Extends 3' ends of gene annotations using BAM files (from STAR alignments) and a reference GTF. Specifically designed for 3'-biased sequencing techniques like 10X scRNA-seq or BRB-seq that primarily capture transcript 3' ends. The BREW3R tool enhances annotations by using evidence from RNA-seq data to improve 3' UTR definitions, which is particularly important for accurate quantification in single-cell and bulk RNA-seq experiments.",
         "tags": [],
-        "release": "0.2",
+        "release": "0.3",
         "collections": [
             "Transcriptomics"
         ],
-        "updated": "2024-10-07T00:00:00"
+        "updated": "2026-06-08T00:00:00"
     }
 ]
